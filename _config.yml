@@ -247,9 +247,10 @@ clickLove:
   enable: true
 
 # fork 项目 GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
-github: false
+github: 
   # (关闭请设置为false)
-  # url: https://github.com/JoeyBling/hexo-theme-yilia-plus
+  enable: true
+  url: https://github.com/YaoJusheng/hexo-theme-yilia-plus
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
