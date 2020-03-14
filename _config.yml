@@ -342,13 +342,13 @@ style:
     enable: true
     default: 'rgba(0,0,0,0.5)'
     # url: 'url(http://q5ndkf89x.bkt.clouddn.com/images/background/36.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
-    url: 'url(http://q5ndkf89x.bkt.clouddn.com/images%2Fcode%2Fcode-15.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
+    url: 'url(http://q5ndkf89x.bkt.clouddn.com/images/code/code-15.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
   # 左侧头像板块动态图效果
   gif:
     # 是否启用
     enable: true
     # 自定义背景图路径(默认可以不设置，提供默认背景图biubiubiu.gif)
-    path: /img/back-02.gif
+    path: /img/avatar.gif
   # 正文的背景颜色(IE兼容设置：opacity:0.8;filter:alpha(opacity=80);)
   article_ground: 
     enable: true
