@@ -1,0 +1,64 @@
+<% if (theme.clickLove && theme.clickLove.enable){ %>
+  <%# "页面点击小红心" %>
+   <script src="<%- url_for('lib/clickLove.js') %>"></script>
+<% } %>
+
+<% if (theme.progressBar.enable) { %>
+  <script src="<%- url_for('lib/pace.min.js') %>"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/<%= theme.progressBar.color || 'blue'%>/pace-theme-<%= theme.progressBar.type || 'minimal'%>.css" rel="stylesheet">
+<% } %>
+  
+<%# "Live2D看板娘：https://github.com/JoeyBling/live2d-widget.js" %>
+<% if (theme.live2d && theme.live2d.enable){ %>
+  <%- partial('_partial/live2d-widget') %>
+<% } %>
+
+<!-- 雪花特效1 -->
+<% if (theme.snow){ %>
+  <script type="text/javascript" src="<%- url_for('lib/snow.js') %>"></script>
+  <script type="text/javascript" src="<%- url_for('lib/jquery-2.1.4.min.js') %>"></script>
+  <script>
+    snow.down();
+    $(window).resize(function() {
+      $("canvas").css("z-index","500").remove();
+      snow.down();
+    });
+  </script>
+<% } %>
+
+<!-- 雪花特效2 -->
+<% if (theme.snow2){ %>
+  <script type="text/javascript" src="<%- url_for('lib/snow2.js') %>"></script>
+<% } %>
+
+<!--代码雨-->
+<% if (theme.code_rain){ %>
+  <!-- 数字雨 -->
+  <script type="text/javascript" src="<%- url_for('lib/rain_code.js') %>"></script>
+<% } %>
+
+<!--动态线条背景-->
+<% if (theme.canvas_nest.enable){ %>
+  <script type="text/javascript" color="<%=theme.canvas_nest.color %>" opacity="<%=theme.canvas_nest.opacity %>"    src="<%- url_for('//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js') %>"
+      zIndex="<%=theme.canvas_nest.zIndex %>" count="<%=theme.canvas_nest.count %>" >
+  </script>
+<% } %>
+
+
+<%# "Daovoice 在线聊天" %>
+<% if (theme.daovoice) { %>
+  <script>
+    (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/<%= theme.daovoice_app_id %>.js","daovoice")
+
+    daovoice('init', {
+      app_id: "<%= theme.daovoice_app_id %>"
+    });
+    daovoice('update');
+
+  </script>
+<% } %>
+
+<!-- Tidio 在线联系功能 -->
+<% if (theme.tidio.enable) { %>
+  <script async src="//code.tidio.co/<%= theme.tidio.key %>.js"></script>
+<% } %>
