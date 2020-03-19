@@ -349,7 +349,7 @@ style:
     enable: true
     default: 'rgba(0,0,0,0.5)'
     # url: 'url(http://q5ndkf89x.bkt.clouddn.com/images/background/36.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
-    url: 'url(http://q5ndkf89x.bkt.clouddn.com/images/code/code-15.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
+    url: 'url(/images/background/code/code-15.jpg) no-repeat 100%;background-size:cover;opacity:0.8;filter:alpha(opacity=80);'
   # 左侧头像板块动态图效果
   gif:
     # 是否启用
@@ -361,7 +361,7 @@ style:
     enable: true
     default: 'rgba(25, 25, 25, 0)'  #设置背景透明度
     # url: 'url(http://q5ndkf89x.bkt.clouddn.com/images/background/39.jpg) no-repeat 100%;background-size:cover;opacity:0.7;filter:alpha(opacity=70);'
-    url: 'url(http://q5ndkf89x.bkt.clouddn.com//images/background/44.jpg) no-repeat 100%;background-size:cover;opacity:0.7;filter:alpha(opacity=70);'
+    url: 'url(/images/background/other/44.jpg) no-repeat 100%;background-size:cover;opacity:0.7;filter:alpha(opacity=70);'
   # 右滑板块背景
   slider: 'linear-gradient(200deg,#ccc,#000)'
 
